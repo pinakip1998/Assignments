@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Basic Calculator</string>
+    <string name="enter_value_2">Enter value 2</string>
+    <string name="enter_value_1">Enter value 1</string>
+    <string name="value_2">Value 2</string>
+    <string name="value_1">Value 1</string>
+    <string name="result">Result</string>
+    <string name="str1">Mode\nSubtraction</string>
+    <string name="str2">Mode\nAddition</string>
+</resources>

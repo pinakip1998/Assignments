@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/labelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="150sp"
+        android:layout_gravity="top"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/value1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/value_1"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/value_2"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:paddingTop="25sp"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        >
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/enter_value_1"
+            android:inputType="number"
+            android:padding="15sp"
+
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/enter_value_2"
+            android:inputType="number"
+            android:padding="15sp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultLabel"
+        android:text="@string/result"
+        android:textAlignment="center"
+        android:padding="20sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:hint="your result"
+        android:textAlignment="center"
+        android:paddingBottom="20sp"
+        android:inputType="number"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:onClick="buttonClickOption"
+            android:text="Mode\nAddition" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/button1"
+            android:text="Calculate"
+            android:onClick="buttonCalculate"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
